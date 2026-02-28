@@ -1,8 +1,5 @@
 # 📊 Vizualizare Date Eurostat — Țările UE (2000–2018)
-
-**Autor:** Stoica Ioana Delia  
-**Nr. lucrare:** 3 | **Nr. student:** 1095  
-
+ 
 Aplicație web client-side pentru vizualizarea interactivă a datelor statistice Eurostat privind **PIB-ul pe cap de locuitor**, **Speranța de Viață** și **Populația** pentru cele 27 de state membre ale Uniunii Europene, în perioada 2000–2018.
 
 ---
