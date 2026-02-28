@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vizualizare Date Eurostat - UE</title>
+    <link rel="stylesheet" href="3_1095_STOICA_IOANA_DELIA.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="header">
+            <h1>Vizualizare Date Eurostat</h1>
+            <p>PIB pe cap de locuitor, Speranța de Viață și Populație - Țările UE (2000-2018)</p>
+        </header>
+
+        <section class="controls">
+            <div class="control-group">
+                <label for="selectTara">Țara:</label>
+                <select id="selectTara">
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="selectIndicator">Indicator:</label>
+                <select id="selectIndicator">
+                    <option value="PIB">PIB pe cap de locuitor</option>
+                    <option value="SV">Speranța de Viață</option>
+                    <option value="POP">Populație</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="selectAn">An:</label>
+                <select id="selectAn">
+                </select>
+            </div>
+
+            <div class="control-group">
+                <button id="btnAnimatie">▶ Start Animație</button>
+            </div>
+        </section>
+
+        <section class="grafic-section">
+            <h2>Evoluție Indicator</h2>
+            <svg id="graficSVG" width="800" height="400">
+            </svg>
+        </section>
+        <section class="bubble-section">
+            <h2>Bubble Chart - Comparație Țări</h2>
+            <p class="bubble-legenda">X: PIB | Y: Speranță Viață | Dimensiune: Populație</p>
+            <canvas id="bubbleCanvas" width="800" height="500"></canvas>
+        </section>
+
+        <section class="tabel-section">
+            <h2>Tabel Date - <span id="anSelectatTabel">2018</span></h2>
+            <p class="tabel-legenda">Culori: <span class="rosu">Roșu = sub media UE</span> | <span class="verde">Verde =
+                    peste media UE</span></p>
+            <div class="tabel-container">
+                <table id="tabelDate">
+                    <thead>
+                        <tr>
+                            <th>Țara</th>
+                            <th>PIB/cap</th>
+                            <th>Speranță Viață</th>
+                            <th>Populație</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="3_1095_STOICA_IOANA_DELIA.js"></script>
+</body>
+
+</html>

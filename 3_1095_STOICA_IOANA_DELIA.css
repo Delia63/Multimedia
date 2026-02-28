@@ -1,0 +1,188 @@
+/* STILURI PRINCIPALE */
+
+/* Reset si stiluri de baza */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container principal */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #6495ED;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+/* SECTIUNE CONTROALE */
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(100, 149, 237, 0.2);
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.control-group label {
+    font-weight: bold;
+    font-size: 0.85em;
+    color: #4a6fa5;
+}
+
+.control-group select,
+.control-group button {
+    padding: 8px 15px;
+    font-size: 1em;
+    border: 1px solid #b0c4de;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.control-group select:hover,
+.control-group button:hover {
+    border-color: #6495ED;
+}
+
+.control-group select:focus {
+    outline: none;
+    border-color: #6495ED;
+    box-shadow: 0 0 5px rgba(100, 149, 237, 0.5);
+}
+
+#btnAnimatie {
+    background-color: #6495ED;
+    color: white;
+    border: none;
+    font-weight: bold;
+    height: 38px;
+}
+
+#btnAnimatie:hover {
+    background-color: #4a7bd4;
+}
+
+/* GRAFICE - partea comuna*/
+.grafic-section,
+.bubble-section,
+.tabel-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(100, 149, 237, 0.2);
+}
+
+.grafic-section h2,
+.bubble-section h2,
+.tabel-section h2 {
+    font-size: 1.2em;
+    color: #4a6fa5;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e8f0fe;
+}
+
+/* GRAFIC SVG */
+#graficSVG {
+    display: block;
+    margin: 0 auto;
+    background-color: #fafcff;
+    border: 1px solid #d0e0f0;
+}
+
+/* BUBBLE CHART */
+.bubble-legenda {
+    text-align: center;
+    font-size: 0.85em;
+    color: #4a6fa5;
+    margin-bottom: 10px;
+}
+
+#bubbleCanvas {
+    display: block;
+    margin: 0 auto;
+    background-color: #fafcff;
+    border: 1px solid #d0e0f0;
+}
+
+/* TABEL DATE */
+.tabel-legenda {
+    text-align: center;
+    font-size: 0.85em;
+    margin-bottom: 10px;
+}
+
+.tabel-legenda .rosu {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.tabel-legenda .verde {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.tabel-container {
+    overflow-x: auto;
+}
+
+#tabelDate {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+#tabelDate th,
+#tabelDate td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #d0e0f0;
+}
+
+#tabelDate th {
+    background-color: #6495ED;
+    color: white;
+    font-weight: bold;
+}
+
+#tabelDate tbody tr:hover {
+    background-color: #e8f0fe;
+}
